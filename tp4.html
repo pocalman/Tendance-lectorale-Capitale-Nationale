@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link media="screen" rel="stylesheet" type="text/css" href="css/style.css">
+  <link media="screen" rel="stylesheet" href="css/main.css">
+  <link media="screen" rel="stylesheet" href="css/normalize.css">
+  <link href="css/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <title>TP 4</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+
+<body>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+    <header id="main-header" class="headerMince">
+        <div class="container">
+        <div class="nav-bar">
+        <a class="slogan nav-link" href="#nuages"><img src="images/logo.png"><span>Tendance électorale Capitale-Nationale</span></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#diagramme_a_bande">Diagramme à bande</a></li>
+                <li><a class="nav-link" href="#map-container">Carte électorale animée</a></li>
+                <li><a class="nav-link" href="#chartContainer">Diagrammes à courbes</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" class="hamburger hamburger--elastic" onclick="myFunction()">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span> <!--Source: https://jonsuh.com/hamburgers/-->
+            </div>
+        </div>
+    </div>
+    <div class="mobile-container">
+            <div class="topnav">
+                    <div id="myLinks">
+                            <ul>
+                                    <li><a class="nav-link" href="#diagramme_a_bande">Diagramme à bande</a></li>
+                                    <li><a class="nav-link" href="#map-container">Carte électorale animée</a></li>
+                                    <li><a class="nav-link" href="#chartContainer">Diagrammes à courbes</a></li>
+                                </ul>
+                    </div> 
+            </div>
+        </div>
+    </header>
+
+    <section class="parallax">
+        <div id="nuages"></div>
+        <h1>Tendance électorale Capitale-Nationale</h1>
+    </section>
+
+
+  <section class="container" id="diagramme_a_bande">
+      <dt>
+          Progression du votes des différents partis politiques provinciaux dans la région de Québec depuis 2008 (en %)
+        </dt>
+    <dl>
+      <p class="textYearhistogram"></p>
+      <dd class="percentage_PLQ"><span class="text">Parti libéral du Québec</span><span class="pourcentage_text_PLQ"></span></dd>
+      <dd class="percentage_ADQCAQ"><span class="text" id="DumontALegault"></span><span class="pourcentage_text_ADQCAQ"></span></dd>
+      <dd class="percentage_PQ"><span class="text">Parti québécois</span><span class="pourcentage_text_PQ"></span></dd>
+      <dd class="percentage_QS"><span class="text">Québec solidaire</span><span class="pourcentage_text_QS"></span></dd>
+    </dl>
+    <button id="playReplay"><i class="fas fa-play-circle playReplay"><span class="playReplay">Jouer</span></i></button>
+  </section>
+  <!-- Graphique adapté à partir de ce site. https://css-tricks.com/making-charts-with-css/ -->
+
+  <section id="map-container" class="container">
+    <h1>Cliquez sur une date pour voir la carte électorale de la région de Québec en fonction de l'année d'élection</h1>
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 719.91 539.933" enable-background="new 0 0 719.91 539.933"
+         xml:space="preserve">
+    <g id="rive-sud">
+        <polygon fill="#F9F9F7" stroke="#0C0B07" stroke-miterlimit="10" points="228,539.933 257,528 318,528 354,512 400,484 432,465 
+            464,457 500,437 538,416 559,392 581,323 605,300.518 638,308 685,308 719.91,300.518 719.91,539.933 	"/>
+        <path fill="#F9F9F7" stroke="#000000" stroke-miterlimit="10" d="M729,721"/>
+        <text transform="matrix(1 0 0 1 630.667 479.333)" font-family="'MyriadPro-Semibold'" font-size="12">QS</text>
+    </g>
+    <g id="La_Peltrie">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="0,0 280,0 292,21 257,47 309,128 228,182 244,200 
+            240,210 309,239 315,232 371,294 359.955,314 384,324 384,338 395,361 372,382 294.729,301.921 263,328 179,348 188,362 121,375 
+            104,355 88,356 70,337 20,345 0,323 	"/>
+        <text transform="matrix(1 0 0 1 88.667 222)" font-family="'MyriadPro-Semibold'" font-size="12">La Peltrie</text>
+        <rect x="604" y="393.334" fill="#0FA3F4" width="12.667" height="10.666"/>
+        <text transform="matrix(1 0 0 1 627.333 403)" font-family="'MyriadPro-Semibold'" font-size="12" class="ADQ_CAQ">CAQ</text>
+        <rect x="604" y="420.226" fill="red" width="12.667" height="10.666"/>
+        <text transform="matrix(1 0 0 1 630.667 431.4668)" font-family="'MyriadPro-Semibold'" font-size="12">PLQ</text>
+        <rect x="604" y="445.667" fill="blue" width="12.667" height="10.666"/>
+        <text transform="matrix(1 0 0 1 630.667 456.333)" font-family="'MyriadPro-Semibold'" font-size="12">PQ</text>
+        <rect x="604" y="468.667" fill="#DD6326" width="12.667" height="10.666"/>
+    </g>
+    <g id="Portneuf">
+        <polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="161,506 141,506 87,539.933 0,539.933 0,323 20,345 
+            70,337 88,356 104,355 121,375 99,382 	"/>
+        <text transform="matrix(1 0 0 1 21 451)" font-family="'MyriadPro-Semibold'" font-size="12">Portneuf</text>
+    </g>
+    <g id="Louis-Hebert">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="161,506 99,382 121,375 188,362 179,348 263,328 
+            296.437,300.518 427.437,442.518 382,455 354,475 310,481 277,479 	"/>
+        <text transform="matrix(1 0 0 1 229 412)" font-family="'MyriadPro-Semibold'" font-size="12">Louis-Hébert</text>
+    </g>
+    <g id="Jean-Talon">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="372,382 395,361 479,361 489,371.5 510,361 529,371.5 
+            516,382 517,387 510,387 509,404 494,411 474,431.467 450.5,445 424,444 	"/>
+        <text transform="matrix(1 0 0 1 426 404)" font-family="'MyriadPro-Semibold'" font-size="12">Jean-Talon</text>
+    </g>
+    <g id="Taschereau">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="516,314 512,323 475,338 489,351 479,361 489,371.5 
+            510,361 529,371.5 554,348 565,314 544,314 	"/>
+        <text transform="matrix(1 0 0 1 491 342.75)" font-family="'MyriadPro-Semibold'" font-size="12">Taschereau</text>
+    </g>
+    <g id="Jean-Lessage">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="484,286 520,263 502,229 510,222 520,230 540,222 
+            547,238 555,238 565,246 565,286 569,300.518 544,314 516,314 513.319,320.031 494,305 	"/>
+        <text transform="matrix(1 0 0 1 491 291.5)" font-family="'MyriadPro-Semibold'" font-size="12">Jean-Lessage</text>
+    </g>
+    <g id="Vanier">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="446,222 379,253 386,288 371,294 359.955,314 384,324 
+            383,336.5 395,361 479,361 489,351 475,338 508.89,324.261 513.319,320.031 486.402,290.564 484,286 	"/>
+        <text transform="matrix(1 0 0 1 416 308)" font-family="'MyriadPro-Semibold'" font-size="12">Vanier</text>
+    </g>
+    <g id="Chauveau">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="419,183 446,222 379,253 386,288 371,294 315,232 
+            309,239 240,210 244,200 228,182 309,128 257,47 292,21 280,0 508,0 538,48 500,97 489,141 	"/>
+        <text transform="matrix(1 0 0 1 333 181)" font-family="'MyriadPro-Semibold'" font-size="12">Chauveau</text>
+    </g>
+    <g id="Charlesbourg">
+        <polyline fill="#FCFBF7" stroke="#000000" stroke-miterlimit="10" points="489,141 419,183 484,286 520,263 502,229 
+            506.814,224.788 520,230 540,222 500,141 	"/>
+        <text transform="matrix(1 0 0 1 432 200)" font-family="'MyriadPro-Semibold'" font-size="12">Charlesbourg</text>
+    </g>
+    <g id="Montmorency">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="633,0 559,53 576,88 574,105 602,145.75 602,162 614,181 
+            625,181 638,200 619,213.5 606,249 588,260 565,260 565,246 555,238 547,238 540,222 464,97 538,48 508,0 	"/>
+        <text transform="matrix(1 0 0 1 491 123)" font-family="'MyriadPro-Semibold'" font-size="12">Montmorency</text>
+    </g>
+    <g id="Charlevoix-Cote-de-Beaupre">
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="633,0 719.91,0 719.91,141 676.455,167 660,180 638,200 
+            625,181 614,181 602,162 602,145.75 574,105 574,83.882 559,53 	"/>
+        <polygon fill="#FFFFFF" stroke="#0C0C0C" stroke-miterlimit="10" points="719.91,162 670,200 629,260 639.455,271.016 662,269.966 
+            719.91,266 	"/>
+        <text transform="matrix(1 0 0 1 565 65)" font-family="'MyriadPro-Semibold'" font-size="12">Charlevoix-Côte-de-Beaupré</text>
+    </g>
+    <g id="Montmmorency">
+    </g>
+    </svg>
+    <ul><li><a id="2008" href="#" class="annee">2008</a></li><li><a id="2012" href="#" class="annee">2012</a></li><li><a id="2014" href="#"  class="annee">2014</a></li><li><a id="2018" href="#" class="annee">2018</a></li></ul>      
+  </section>
+
+  <div class="container" id="chartContainer" style="height: 370px; width: 90%;"></div> <!--Adapté de ceci: "https://canvasjs.com/javascript-charts/solid-dashed-line-chart//"-->
+
+  
+  <footer>
+    <p>Copyright 2018- site réalisé par Pascal Lévesque</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+    integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+    crossorigin="anonymous"></script> 
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> 
+<script src="js/js.js"></script>
+
+
+</body>
+
+</html>

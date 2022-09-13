@@ -1,0 +1,1800 @@
+*{ box-sizing: border-box;}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+h1{
+  text-align:center;
+  font-size:1rem;
+}
+
+ul {
+  list-style-type: none;
+  width:100%;
+  padding-left:0;
+}
+
+ul li{
+  display:inline-block;
+  width:25%;
+  text-align:center; 
+}
+
+polygon, polyline{
+  transition:all 3s;
+}
+
+svg{
+  border:solid 1px;
+  background-color:royalblue;
+}
+
+svg text{
+  font-family: Myriad Pro;
+  font-weight: bold;
+}
+
+#hamburger{
+  display:none;
+}
+
+
+.mobile-container {
+  margin: auto;
+  background-color:#000066;
+  color: white;
+  display:none;
+}
+
+.mobile-container a{
+  color: white;
+  text-decoration:none;
+}
+
+.mobile-container a:hover{
+  color:#b4cde4;
+}
+
+
+.mobile-container ul li{
+  width:100%;
+  text-align:left;
+  margin-top:1%;
+  margin-bottom:1%;
+  font-weight:600;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#000066;
+  position: relative;
+  width:80%;
+  margin: 0 auto;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.active {
+  background-color:#000066;
+  color: white;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/assembleeNationale.png");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  position:relative;
+  height:850px;
+}
+
+.parallax h1{
+  padding-top:600px;
+  font-size:1.75rem;
+  padding-bottom:200px;
+  z-index:3;
+  position:relative;
+}
+
+#nuages{
+  background-image: url("../images/cloudsPrime.png");
+  background-attachment: fixed;
+  width:100%;
+  height:100%;
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  z-index:-1;
+  position:absolute;
+  animation: cloudsMove 40s infinite linear;
+}
+
+ @-webkit-keyframes cloudsMove {
+
+  0% {
+    background-position-y: 0px;
+  background-position-x: 0px;
+  }
+
+  100% {
+    background-position-y: 0px;
+  background-position-x: 1315%;
+  }
+}
+
+@keyframes cloudsMove {
+  0% {
+    background-position-y: 0px;
+  background-position-x: 0px;
+  }
+
+  100% {
+    background-position-y: 0px;
+  background-position-x: 1315%;
+  }
+}
+
+
+
+.current{
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+#diagramme_a_bande{
+padding-top:10%;
+padding-bottom:5%;
+}
+
+#map-container{
+padding-top:10%;
+padding-bottom:10%;
+width:100%;
+    }
+
+#chartContainer{
+  margin-top:10%;
+margin-bottom:10%;
+      }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#map-container h1{
+  font-size:1rem;
+}
+
+header{
+  background-color:#000066;
+  position: fixed;
+  width:100%;
+  z-index:5;
+  top: 0;
+}
+
+
+
+footer{
+  text-align:center; 
+  color:white;
+  background-color:#000066;
+  width:100%;
+}
+footer p{
+  margin:0;
+}
+
+body{
+  font-family: Source Sans Pro;
+}
+
+.screen-reader-text{
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal 
+}
+
+
+.nav-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.nav-bar ul{
+width:120%;
+}
+
+.nav-bar img{
+  width:150px;
+  border-radius:50%;
+  margin-left:2%;
+  margin-right:2%;
+  height:auto;
+-webkit-transition: all 3s; 
+  transition: all 3s;
+}
+
+.headerMince img{
+  width:100px;
+}
+
+.nav-bar a{
+  color:white;
+  font-weight:600;
+}
+
+.slogan{
+  width:50%;
+}
+
+
+.slogan p{
+  width:80%;
+  margin:5%;
+  color:white;
+}
+
+.slogan span{
+  display:inline-block;
+  font-size:0.75rem;
+}
+
+nav{
+  font-family: tahoma;
+  font-size:0.8rem;
+  color:white;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+}
+
+nav a{
+  display:block;
+  margin:0 0.5rem;
+  color:white;
+}
+
+nav a:hover{
+  color:#b4cde4;
+}
+
+nav ul{
+  padding:0;
+  margin:0;
+}
+
+nav ul li{
+  display:inline-block;
+}
+
+#diagramme_a_bande{
+margin-top:10%;
+margin-bottom:10%;
+}
+
+svg{
+  border:solid 1px;
+  background-color:royalblue;
+}
+
+svg text{
+  font-family: Myriad Pro;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.current{
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+
+dl {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  padding: 20px;
+  text-align:center;
+  margin-top:0;
+}
+
+dt {
+  align-self: flex-start;
+  width: 80%;
+  margin:5%;
+  margin-top:10%;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+
+.text {
+  font-weight: bold;
+  display: block;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  position: absolute;
+  left: -20%;
+  top: 15%;
+  float: left;
+}
+
+#DumontALegault:before {
+  content: 'Action Démocratique du Québec';
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer #DumontALegault:before {
+  animation-name: adqACaq;
+}
+
+@keyframes adqACaq {
+  100% {
+    content: "Coalition Avenir Québec";
+  }
+}
+
+
+
+.textYearhistogram {
+  text-align: center;
+  font-weight: bold;
+}
+
+.textYearhistogram:before {
+  content: "2008";
+  text-align: center;
+  font-weight: bold;
+  
+  animation-duration: 70s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .textYearhistogram:before{
+  animation-name: changeyear;
+}
+
+@keyframes changeyear {
+  0% {
+    content: "2008";
+  }
+
+  16.67%,
+  33.33% {
+    content: "2012";
+    text-align: center;
+    font-weight: bold;
+  }
+
+  50%,
+  66.67% {
+    content: "2014";
+    text-align: center;
+    font-weight: bold;
+  }
+
+  100% {
+    content: "2018";
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+
+.percentage {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+}
+
+.percentage_ADQCAQ {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+  position: relative;
+}
+
+.pourcentage_text_ADQCAQ:before {
+  content: "28,48%";
+  position: absolute;
+  left: 28.48%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 20%;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .pourcentage_text_ADQCAQ:before {
+  animation: caqstat 70s;
+}
+
+@keyframes caqstat {
+
+  1%,
+  15.67% {
+    content: "";
+  }
+
+  16.67%,
+  33.33% {
+    content: "35,19%";
+    transform: translate(59%);
+  }
+
+  34.33%,
+  49% {
+    content: "";
+  }
+
+  50%,
+  66.67% {
+    content: "33,59%";
+    transform: translate(43%);
+  }
+
+  67.67%,
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "43%";
+    transform: translate(220%);
+  }
+}
+
+
+
+.percentage_PLQ {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+  position: relative;
+}
+
+.pourcentage_text_PLQ::before {
+  content: "37,06%";
+  position: absolute;
+  left: 37.06%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 20%;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .pourcentage_text_PLQ:before {
+  animation: plqstat 70s;
+}
+
+@keyframes plqstat {
+
+  1%,
+  15.67% {
+    content: "";
+  }
+
+  16.67%,
+  33.33% {
+    content: "31,63%";
+    transform: translate(-47%);
+  }
+
+  34.33%,
+  49% {
+    content: "";
+  }
+
+  50%,
+  66.67% {
+    content: "38,89%";
+    transform: translate(17%);
+  }
+
+  67.67%,
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "22%";
+    transform: translate(-213%);
+  }
+}
+
+
+.percentage_QS {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+  position: relative;
+}
+
+.pourcentage_text_QS:before {
+  content: "3.52%";
+  position: absolute;
+  left: 3.52%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 20%;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .pourcentage_text_QS:before{
+  animation: qsstat 70s;
+}
+
+@keyframes qsstat {
+
+  1%,
+  15.67% {
+    content: "";
+  }
+
+  16.67%,
+  33.33% {
+    content: "4,73%";
+    transform: translate(15%);
+  }
+
+  34.33%,
+  49% {
+    content: "";
+  }
+
+  50%,
+  66.67% {
+    content: "6,38%";
+    transform: translate(31%);
+  }
+
+  67.67%,
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "17,6%";
+    transform: translate(138%);
+  }
+}
+
+.percentage_PQ {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+  position: relative;
+}
+
+.pourcentage_text_PQ:before {
+  content: "29,19%";
+  position: absolute;
+  left: 29.19%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 20%;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .pourcentage_text_PQ:before{
+  animation: pqstat 70s;
+}
+
+@keyframes pqstat {
+
+  1%,
+  15.67% {
+    content: "";
+  }
+
+  16.67%,
+  33.33% {
+    content: "24,08%";
+    transform: translate(-40%);
+  }
+
+  34.33%,
+  49% {
+    content: "";
+  }
+
+  50%,
+  66.67% {
+    content: "18,13%";
+    transform: translate(-95%);
+  }
+
+  67.67%,
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "11.96%";
+    transform: translate(-150%);
+  }
+}
+
+.percentage_ADQCAQ:after {
+  content: "";
+  display: block;
+  background-color: rgb(51, 155, 224);
+  width: 28.48%;
+  margin-bottom: 10px;
+  height: 90%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: background-color .3s ease;
+  cursor: pointer;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .percentage_ADQCAQ:after {
+  animation: CAQ 70s, cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes CAQ {
+  0% {
+    width: 1;
+  }
+
+  16.67%,
+  33.33% {
+    width: 35.19%;
+  }
+
+  50%,
+  66.67% {
+    width: 33.59%;
+  }
+
+  100% {
+    width: 43%;
+  }
+}
+
+
+.percentage_PLQ:after {
+  content: "";
+  display: block;
+  background-color: red;
+  width: 37.06%;
+  margin-bottom: 10px;
+  height: 90%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: background-color .3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .percentage_PLQ:after {
+  animation: PLQ 70s, cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes PLQ {
+  0% {
+    width: 1;
+  }
+
+  16.67%,
+  33.33% {
+    width: 31.63%;
+  }
+
+  50%,
+  66.67% {
+    width: 38.89%;
+  }
+
+  100% {
+    width: 22%;
+  }
+
+}
+
+
+
+.percentage_PQ:after {
+  content: "";
+  display: block;
+  background-color: blue;
+  width: 29.19%;
+  margin-bottom: 10px;
+  height: 90%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: background-color .3s ease;
+  cursor: pointer;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .percentage_PQ:after {
+  animation: PQ 70s, cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes PQ {
+  0% {
+    width: 1;
+  }
+
+  16.67%,
+  33.33% {
+    width: 24.08%;
+  }
+
+  50%,
+  66.67% {
+    width: 18.13%;
+  }
+
+  100% {
+    width: 11.96%;
+  }
+}
+
+
+.percentage_QS:after {
+  content: "";
+  display: block;
+  background-color: orangered;
+  width: 3.52%;
+  margin-bottom: 10px;
+  height: 90%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: background-color .3s ease;
+  cursor: pointer;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.jouer .percentage_QS:after {
+  animation: QS 70s, cubic-bezier(.59, .01, 1, .12);
+}
+
+
+
+@keyframes QS {
+  0% {
+    width: 1;
+  }
+
+  16.67%,
+  33.33% {
+    width: 4.73%;
+  }
+
+  50%,
+  66.67% {
+    width: 6.38%;
+  }
+
+  100% {
+    width: 17,16%;
+  }
+
+}
+
+.playReplay {
+  font-family: tahoma;
+  font-size: 1.2rem;
+}
+
+.playReplay:hover {
+  color: slategray
+}
+
+
+
+.percentage:hover:after,
+.percentage:focus:after {
+  background-color: #aaa;
+}
+
+
+
+html,
+body {
+  height: 500px;
+  font-family: "fira-sans-2", sans-serif;
+  color: #333;
+}
+
+@media (min-width:300px) and (max-width:454px) {
+
+  nav{
+    display:none;
+  }
+
+  #hamburger{
+    display:inherit;
+  }
+
+  .mobile-container {
+    margin: auto;
+    background-color:#000066;
+    color: white;
+    display:inherit;
+  }
+
+  .slogan span{
+    display:none;
+  }
+
+
+  .text {
+    font-size: 0.7em;
+  }
+
+
+  dt {
+    align-self: flex-start;
+    width: 100%;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    font-size: .955em;
+    font-weight: 700;
+    margin: auto;
+  }
+
+  .percentage_ADQCAQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_ADQCAQ:before {
+    content: "28,48%";
+    position: absolute;
+    left: 40%;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 20%;
+    animation: caqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes caqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "35,19%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "33,59%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "43%";
+    }
+  }
+
+  .percentage_PLQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PLQ::before {
+    content: "37,06%";
+    position: absolute;
+    left: 40%;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 20%;
+    animation: plqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes plqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "31,63%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "38,89%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "22%";
+    }
+  }
+
+
+  .percentage_QS {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_QS:before {
+    content: "3.52%";
+    position: absolute;
+    left: 40%;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 20%;
+    animation: qsstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes qsstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "4,73%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "6,38%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "17,60%";
+    }
+  }
+
+  .percentage_PQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PQ:before {
+    content: "29,19%";
+    position: absolute;
+    left: 40%;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 20%;
+    animation: pqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes pqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "24,08%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "18,13%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "11.96%";
+    }
+  }
+
+  #nuages{
+    background-image: url("../images/cloudsPrime.png");
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    z-index:-1;
+    position:absolute;
+    animation: cloudsMove 250s infinite linear;
+  }
+  
+   @-webkit-keyframes cloudsMove {
+  
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+  
+  @keyframes cloudsMove {
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+
+
+}
+
+
+
+
+@media (min-width:455px) and (max-width:644px) {
+
+  .text {
+    font-size: 0.7em;
+  }
+
+  nav{
+    display:none; 
+  }
+
+  #hamburger{
+    display:inherit;
+  }
+
+  .mobile-container {
+    margin: auto;
+    background-color:#000066;
+    color: white;
+    display:inherit;
+  }
+
+  .slogan span{
+    display:none;
+  }
+
+
+  .percentage_ADQCAQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_ADQCAQ:before {
+    content: "28,48%";
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: caqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes caqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "35,19%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "33,59%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "43%";
+    }
+  }
+
+  .percentage_PLQ {
+    font-size: 0.8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PLQ::before {
+    content: "37,06%";
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: plqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes plqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "31,63%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "38,89%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "22%";
+    }
+  }
+
+
+  .percentage_QS {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_QS:before {
+    content: "3.52%";
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: qsstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes qsstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "4,73%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "6,38%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "17,6%";
+    }
+  }
+
+  .percentage_PQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PQ:before {
+    content: "29,19%";
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: pqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes pqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "24,08%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "18,13%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "11.96%";
+    }
+  }
+
+  #nuages{
+    background-image: url("../images/cloudsPrime.png");
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    z-index:-1;
+    position:absolute;
+    animation: cloudsMove 200s infinite linear;
+  }
+  
+   @-webkit-keyframes cloudsMove {
+  
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+  
+  @keyframes cloudsMove {
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+
+}
+
+@media (min-width:645px) and (max-width:720px) {
+
+  nav{
+    display:none;
+  }
+
+  #hamburger{
+    display:inherit;
+  }
+
+  .mobile-container {
+    margin: auto;
+    background-color:#000066;
+    color: white;
+    display:inherit;
+  }
+
+  .slogan span{
+    display:none;
+  }
+
+
+
+  .percentage_ADQCAQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_ADQCAQ:before {
+    content: "28,48%";
+    position: absolute;
+    left: 65%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: caqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes caqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "35,19%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "33,59%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "43%";
+    }
+  }
+
+
+
+  .percentage_PLQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PLQ::before {
+    content: "37,06%";
+    position: absolute;
+    left: 65%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: plqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes plqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "31,63%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "38,89%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "22%";
+    }
+  }
+
+
+  .percentage_QS {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_QS:before {
+    content: "3.52%";
+    position: absolute;
+    left: 65%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: qsstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes qsstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "4,73%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "6,38%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "17,6%";
+    }
+  }
+
+  .percentage_PQ {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    margin-left: 130px;
+    background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+    position: relative;
+  }
+
+  .pourcentage_text_PQ:before {
+    content: "29,19%";
+    position: absolute;
+    left: 65%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 20%;
+    animation: pqstat 70s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+  }
+
+  @keyframes pqstat {
+
+    1%,
+    15.67% {
+      content: "";
+    }
+
+    16.67%,
+    33.33% {
+      content: "24,08%";
+    }
+
+    34.33%,
+    49% {
+      content: "";
+    }
+
+    50%,
+    66.67% {
+      content: "18,13%";
+    }
+
+    67.67%,
+    99% {
+      content: "";
+    }
+
+    100% {
+      content: "11.96%";
+    }
+  }
+
+  #nuages{
+    background-image: url("../images/cloudsPrime.png");
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    z-index:-1;
+    position:absolute;
+    animation: cloudsMove 150s infinite linear;
+  }
+  
+   @-webkit-keyframes cloudsMove {
+  
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+  
+  @keyframes cloudsMove {
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+  
+}
+
+@media (min-width:645px) and (max-width:1200px) {
+  #nuages{
+    background-image: url("../images/cloudsPrime.png");
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    z-index:-1;
+    position:absolute;
+    animation: cloudsMove 100s infinite linear;
+  }
+  
+   @-webkit-keyframes cloudsMove {
+  
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+  
+  @keyframes cloudsMove {
+    0% {
+      background-position-y: 0px;
+    background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-y: 0px;
+    background-position-x: 1315%;
+    }
+  }
+}
+
+@media (min-width:721px) and (max-width:1045px) {
+
+.slogan span{
+  display:none;
+}
+
+}
+
+
+
+
